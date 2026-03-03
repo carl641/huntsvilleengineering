@@ -1,0 +1,103 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #1d2733;
+  --muted: #526274;
+  --accent: #1f6feb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0d3b66, #1f6feb);
+  color: white;
+  padding: 3rem 1.25rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.category-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.category-card,
+.company-card {
+  background: var(--card);
+  border-radius: 10px;
+  border: 1px solid #dbe3ec;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(13, 59, 102, 0.08);
+}
+
+.category-card h2,
+.company-card h2 {
+  margin-top: 0;
+}
+
+.category-card a,
+.back-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.category-card a:hover,
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.page-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0;
+}
+
+.page-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.company-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.company-card p {
+  margin: 0.35rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  color: var(--muted);
+  border-top: 1px solid #dbe3ec;
+  background: #fff;
+}
